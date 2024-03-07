@@ -1,0 +1,14 @@
+.carousel {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .carousel .carousel_container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel .carousel_container .carousel_item {
+    flex: none;
+  }
+ 

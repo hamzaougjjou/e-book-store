@@ -1,0 +1,104 @@
+
+.book_item{
+    width: 450px;
+    height: 250px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.book_item .book_image{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: -25px;
+    left: 10px;
+    border-radius: 4px;
+}
+.book_item  .book_item_body{
+    height: 175px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 8px 0 0;
+}
+.book_item .book_item_footer{
+    height: 72px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+}
+.book_item .book_item_footer::before{
+    content: "";
+    position: absolute;
+    background-color: #424242;
+    height: 1px;
+    width: 80%;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.book_item .book_item_footer .btn_add_to_cart{
+    background-color: var(--main-green);
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.book_item .book_item_footer .btn_add_to_cart *{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.book_item .book_item_body .book_item_body_content {
+    position: absolute;
+    width: calc( 100% - 160px );
+    height: 100%;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    color: #141414;
+    padding-left: 10px;
+}
+.book_item .book_item_body .book_item_body_content .book_title {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+.book_item .book_item_body .book_item_body_content .book_author {
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+    padding-left: 5px;
+
+}
+.book_item .book_item_body .book_item_body_content .book_description {
+    font-size: 15px;
+    color: rgb(48, 48, 48);
+    padding-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.book_item .book_item_body .book_item_body_content .votes_container{
+    display: flex;
+    justify-content: space-between;
+    color: #cecece;
+}
+.book_item .book_item_body .book_item_body_content .votes_container .stars{
+    display: flex;
+    justify-content: space-between;
+    color: #cecece;
+    gap: 3px;
+    padding: 5px 0;
+}
+.book_item .book_item_body .book_item_body_content .votes_container i{
+    font-size: 16px;
+    color: orange;
+}

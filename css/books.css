@@ -1,0 +1,343 @@
+.header_book {
+    min-height: 350px;
+    /* background-color: teal; */
+    background-color: rgba(120, 255, 255, 0.3);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header_book .carousel_container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+    transition: transform 0.5s ease;
+    justify-content: left;
+}
+
+
+.header_book_item {
+    flex: 500px;
+    width: 500px !important;
+    height: 350px;
+    border-radius: 0px;
+    padding: 10px;
+    background-color: #4329b8;
+}
+
+.header_book_item .book_image {
+    top: 0;
+    bottom: -10px !important;
+    left: 10px;
+    height: max-content;
+    width: 150px;
+}
+
+.header_book_item:nth-child(1) {
+    background-color: #ff4e08;
+}
+
+.header_book_item:nth-child(2) {
+    background-color: rgb(0, 206, 69);
+}
+
+.header_book_item:nth-child(3) {
+    background-color: rgb(218, 32, 255);
+}
+
+.header_book_item:nth-child(4) {
+    background-color: aquamarine;
+}
+
+.header_book_item:nth-child(5) {
+    background-color: rgb(230, 18, 64);
+}
+
+
+#new_books_prev_btn {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 20px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #4329b8;
+    font-weight: bold;
+    background-color: #efefef;
+    background-color: var(--main_orange);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#new_books_next_btn {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    right: 20px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #4329b8;
+    font-weight: bold;
+    background-color: #efefef;
+    background-color: var(--main-orange);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.btn_add_to_cart {
+    background-color: rgb(0, 0, 0) !important;
+    border-radius: 0;
+}
+
+/* ============================================================ */
+
+
+.book_main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-height: 500px;
+    margin-top: 30px;
+}
+
+.book_main aside {
+    background-color: #f7f7f7;
+    width: 300px;
+    position: relative;
+    border-radius: 0 5px 5px 0;
+    padding: 10px
+}
+
+.book_main aside::after {
+    content: '';
+    /* background-color: #252121; */
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    height: calc(100% - 20px);
+    top: 10px;
+    border-radius: 5px;
+    right: -10px;
+}
+
+.book_main aside>h1 {
+    padding: 10px 0;
+}
+
+.book_main aside>.authors_container {
+    padding: 10px 0;
+}
+
+.book_main aside>.authors_container .author_item {
+    display: flex;
+    padding: 0 10px;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.book_main aside>.authors_container .author_item .author_image {
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.book_main aside>.authors_container .author_item div p {
+    font-size: 12px;
+    color: #ff4e08;
+}
+
+.book_main aside .best_seller_item {
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+    max-width: 100%;
+    max-width: calc(100% - 10px);
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.book_main aside .best_seller_item img {
+    width: 60px;
+    border-radius: 3px;
+}
+
+.book_main aside .best_seller_item section p {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.book_main aside .best_seller_item section h6 {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    color: var(--main-orange);
+}
+
+.book_main aside .best_seller_item section h6 span {
+    font-size: 10px;
+    font-style: italic;
+    color: black;
+}
+
+
+
+.book_main .book_container {
+    padding: 10px;
+}
+
+.book_main .book_container .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book_main .book_container .header .fillters {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+
+}
+
+.book_main .book_container .header div h2 {
+    margin-left: 20px;
+    color: #ff4e08;
+}
+
+.book_main .book_container .header .fillters .fillter_item {
+    width: fit-content;
+    padding: 4px 16px 4px 16px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    background-color: #efefef;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_main .book_container .header .fillters .fillter_item.active {
+    background-color: var(--main-orange);
+    color: white;
+}
+
+
+.books_container {
+    display: flex;
+    margin-top: 20px;
+    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    padding-bottom: 20px;
+    row-gap: 30px;
+    overflow-y: scroll;
+}
+
+.books_container .new_book_item {
+    background-color: rgb(240, 240, 240);
+    border-radius: 0;
+}
+
+.books_container .new_book_item::after {
+    content: '';
+    background-color: transparent;
+}
+
+.books_container::-webkit-scrollbar {
+    background-color: rgb(161, 161, 161);
+    width: 10px;
+    color: #fff;
+    position: absolute !important;
+    left: 40px;
+    border-radius: 15px;
+}
+
+.books_container::-webkit-scrollbar-thumb {
+    background-color: rgb(17, 17, 17);
+    width: 4px;
+    border-radius: 15px;
+}
+
+
+
+.bottom_slider_container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.bottom_slider_item {
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    position: absolute;
+    display: flex;
+    opacity: 0.5;
+}
+
+.bottom_slider_item:nth-child(1) {
+    background: #05e68f;
+
+}
+
+.bottom_slider_item:nth-child(2) {
+    background: #4329b8;
+}
+
+.bottom_slider_item:nth-child(3) {
+    background: rgb(21, 207, 98);
+}
+
+.bottom_slider_item:nth-child(4) {
+    background: #a50a8b;
+}
+
+.bottom_slider_item:nth-child(5) {
+    background: #0599a3;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

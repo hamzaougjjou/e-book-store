@@ -1,0 +1,39 @@
+
+.collections_container{
+    display: flex;
+}
+.collection_item{
+    background-color: teal !important;
+    color: whitesmoke !important;
+    width: 600px !important;
+    position: relative !important;
+}
+.collection_item .collection_image_container{
+    background-color: red !important;
+    height: 100% !important;
+    width: 200px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    margin: 0 !important;
+}
+.collection_item .collection_image_container img{
+    height: 100% !important;
+    width: 200px !important;
+    padding: 0 !important;
+}
+.collection_item  .description{
+    color: #fff !important;
+}
+
+.collection_item  .btns_container{
+    /* position: absolute; */
+    width: 380px;
+    height: 30px;
+    margin-bottom: -20px;
+}
+.collection_item  .btns_container .btn{
+    padding: 10px;
+    padding-bottom: 10px !important;
+    display: inline-block;
+}
+

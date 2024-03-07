@@ -1,0 +1,104 @@
+.main_header{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    background-position: 0px -280px;
+    background-size: 100vw 100vh;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav_container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    border-radius: 0 0 8px 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    /* background-color: rgba(238, 238, 238, 0.2); */
+    z-index: 9999999999;
+    left: 50%;
+    transform: translate( -50%);
+    transition: all 1s ease-in-out;
+}
+.nav_container nav{
+    margin: 0 auto;
+}
+.nav_container nav ul{
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    font-weight: 700;
+    color: #121212;
+}
+.nav_container nav ul a{
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    position: relative;
+}
+
+.nav_container nav ul a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -10px;
+}
+
+.nav_container nav ul a:hover::after{
+    background-color:  teal !important;
+    animation-name: navHoverAnimation;
+    animation-duration: .5s;
+}
+
+.nav_container nav ul a.active::after{
+    background-color:  teal !important;
+    animation-name: navHoverAnimation;
+    animation-duration: 1s;
+}
+
+
+@keyframes navHoverAnimation {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+.nav_container .actions{
+    display: flex;
+    gap: 30px;
+}
+.nav_container .actions i{
+    color: #000;
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav_container .actions i.fa-shopping-cart::after{
+    content: attr(cart-items);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #f00;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    left: -10px;
+    top: -10px;
+}

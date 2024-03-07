@@ -1,0 +1,58 @@
+
+
+
+.news_letter_container{
+    padding: 30px;
+}
+
+
+.news_letter_container .title{
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-style: italic;
+    color: var(--main-orange);
+}
+.news_letter_container .input_container{
+    padding: 2px;
+    width: 450px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-orange);
+    position: relative;
+}
+.news_letter_container .input_container input{
+    padding: 2px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 14px 115px 14px 5px;
+    border: 1px solid var(--main-orange);
+    color: black;
+    outline: none;
+}
+.news_letter_container .input_container .btn_subscribe{
+    padding: 2px;
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: var(--main-orange);
+    color: whitesmoke;
+    outline: none;
+    top: 7px;
+    right: 10px;
+}
+
+
+    /* <div class="news_letter_container txt-center">
+
+
+    <div class="input_container">
+        <input type="email" placeholder="Enter Your Emal">
+        <button class="btn_subscribe">Get Started</button>
+    </div>
+</div> */

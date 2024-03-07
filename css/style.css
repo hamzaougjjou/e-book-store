@@ -1,0 +1,78 @@
+:root {
+    --main-color: #04ca5d;
+    --main-green: #04ca5d;
+    --main-black: #000000;
+    --main-back-sec-color: #F8F9FD;
+    --main-blue: #0f56da;
+    --main-orange: orange;
+    --main-pink:  rgba(255, 223, 223, 0.5);
+    --main-red: rgb(236, 55, 55);
+    --main-padding: 105px;
+    --main-raduis: 4px;
+    --main-transition: .3s;
+    --main-line-height: 1.7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+
+
+.btn{
+    color: black;
+    outline: none;
+    border: none;
+    background-color: rgb(207, 207, 207);
+    border-radius: 8px;
+    min-width: 80px;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: .8;
+}
+.btn:hover{
+    opacity: 1;
+}
+
+
+.btn_explorer:hover{
+    transition: all .3s;
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.btn_vew_more{
+    display: block;
+    width: 300px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color: orangered;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    margin: 0px auto;
+}
+.btn_vew_more:hover{
+    background-color: rgb(235, 63, 1);
+    transform: scale(1.1);
+}

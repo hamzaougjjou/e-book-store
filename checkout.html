@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bookItem.css">
+    <link rel="stylesheet" href="./fontOwsome/css/all.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/reviews.css">
+    <link rel="stylesheet" href="./css/new_books.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/newsleter.css">
+    <link rel="stylesheet" href="./css/header.css">
+
+    <link rel="stylesheet" href="./css/books.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+
+    <style>
+        .new_book_item {
+            position: static !important;
+        }
+    </style>
+
+    <title>REWAQ BOOKSTORE</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="main_header">
+
+            <section class="nav_container" id="nav_container">
+                <div class="logo_container">
+                    <a href="/index.html">
+                        <img src="./images/logo.png" alt="
+                        REWAQ LOGO
+                        " height="80px" style="margin-top: 10px;">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="index.html" class="header_main_link">
+                            <li>HOME</li>
+                        </a>
+                        <a href="categories.html" class="header_main_link">
+                            <li>CATEGORIES</li>
+                        </a>
+                        <a href="books.html" class="header_main_link">
+                            <li>BOOKS</li>
+                        </a>
+                        <a href="collections.html" class="header_main_link active">
+                            <li>COLLECTIONS</li>
+                        </a>
+                    </ul>
+                </nav>
+                <div class="actions">
+                    <!-- <i class="fa fa-shopping-cart" cart-items="01" id="btn_open_cart"></i> -->
+                    <i class="fa fa-user"></i>
+                </div>
+            </section>
+        </header>
+    </div>
+
+
+    <div class="container">
+        <h1 class="check-out-title">تاكيد الطلب</h1>
+
+        <div class="row" style="display:grid;
+	grid-template-columns: 1fr auto;
+	">
+
+            <div class="col-75">
+                <div class="content">
+                    <p style="margin: 10px 0;
+					text-align: center;
+					color: red;
+					min-height: 20px"> Validat Error </p>
+
+                    <form action="#" method="post">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="name">
+                                    <i class="fa fa-user"></i>
+                                    الاسم الكامل
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="Nom & prenom" />
+
+                                <label for="address"><i class="fa fa-address-card-o">
+                                    </i> العنوان
+                                </label>
+                                <textarea id="address" name="address" placeholder="542 W. 15th Street"></textarea>
+
+                                <label for="city"><i class="fa fa-institution">
+
+                                    </i> المدينة
+                                </label>
+                                <input type="text" id="city" name="city" placeholder="ville" />
+
+
+                            </div>
+
+                            <div class="col-50">
+
+                                <label for="email"><i class="fa fa-envelope">
+                                    </i> البريد الالكتروني
+                                </label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com" />
+
+                                <label for="phone">
+                                    <i class="fa fa-phone">
+                                    </i> رقم الهاتف
+                                </label>
+
+                                <input type="text" id="email" name="email" placeholder="06xxxxxxxx" />
+
+                            </div>
+
+                        </div>
+
+                        <label>
+                            <input type="checkbox" name="sameadr" checked />
+                            ارسال الطلبية الى العنوان المدكور اعلى
+                        </label>
+
+                        <div style="width: 300px">
+                            <p class="btn" style="text-align: center;">
+                                Continue to checkout
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-25">
+                <div class="content">
+
+                    <section class="edit-cart-container">
+                        <Link to="/cart">
+                        تعديل السلة
+                        </Link>
+                    </section>
+
+                    <h4>Cart <span class="price" style="color: black">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>4</b></span>
+                    </h4>
+
+                    <hr />
+                    <br />
+
+                    <p style="margin-bottom: 10px ; text-align: right ; direction: ltr ; display: grid ;
+					grid-template-columns: auto 1fr auto ;">
+
+                        <span>
+                            2 -
+                        </span>
+                        <a href="/books/709" style="text-align: left ; padding: 0 5px">
+                            Lorem, ipsum dolor...
+                        </a>
+
+                        <span class="price">
+                            200.00 DH
+                        </span>
+                    </p>
+
+                    <br />
+                    <hr />
+                    <p class="total-price-container">
+                        Total
+                        <span class="price" style="color: black;">
+                            <b>
+                                total
+                            </b>
+                            <span class="curency">dh</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="news_letter_container txt-center">
+        <h1 class="title">
+            join ournews letter
+        </h1>
+
+        <div class="input_container">
+            <input type="email" placeholder="Enter Your Emal">
+            <button class="btn_subscribe">Get Started</button>
+        </div>
+    </div>
+
+
+    <footer class="">
+        <div class="container">
+            <div class="info-foot">
+                <div class="col">
+                    <h2>
+                        Lorem, ipsum.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quae maxime omnis molestiae magni aperiam reiciendis
+                        voluptatum harum dicta impedit? Maxime nobis quis pariatur
+                        alias veritatis. Id vitae eveniet accusamus exercitationem, ullam quaerat,
+                        autem facilis nobis ratione aut ad, dicta natus!
+                        <!-- A small river named Duden flows by their 
+                        place and supplies it with the necessary regelialia. -->
+                    </p>
+                    <div class="icon-socail-foot">
+                        <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Latest News</h2>
+                    <ul>
+                        <li><img src="./images/p/p2.jpeg" alt="">
+                            <a href="#">Even the all-powerful Pointing has no control about
+                                <span>April 7, 2020 Admin 19</span>
+                            </a>
+                        </li>
+                        <li><img src="./images/p/p1.jpg" alt="">
+                            <a href="#">Even the all-powerful Pointing has no control about
+                                <span>April 7, 2020 Admin 19</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Have a Questions?</h2>
+                    <ul>
+                        <li>203 Fake St. Mountain View, San Francisco, California, USA</li>
+                        <li><a href="tel:9837873">+2 392 3929 210</a></li>
+                        <li><a href="mailto:@knfl.gmail.com">info@yourdomain.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">Copyright ©2022 All rights reserved | This template is made with <i
+                    class="fa-solid fa-heart"></i> by
+                <a href="mailto:hamzaougjjou04@gmail.com">hamza ougjjou</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

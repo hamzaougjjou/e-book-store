@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bookItem.css">
+    <link rel="stylesheet" href="./fontOwsome/css/all.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/reviews.css">
+    <link rel="stylesheet" href="./css/new_books.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/newsleter.css">
+    <link rel="stylesheet" href="./css/categories.css">
+    <link rel="stylesheet" href="./css/header_home.css">
+
+
+    <!-- <link rel="stylesheet" href="./css/categories.css"> -->
+    <link rel="stylesheet" href="./css/pagination.css">
+
+
+
+    <style>
+        .category_item {
+            background: #121212;
+            background-size: cover;
+            background-position: center center;
+            padding: 0 !important;
+            margin: 0 !important;
+            display: block !important;
+            max-width: 100% !important;
+            margin: 0;
+        }
+
+        .category_item .category_item_content {
+            background-color: rgba(0, 0, 0, 0.6);
+            /* width: 100%; */
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in;
+        }
+
+        .category_item .category_item_content:hover {
+            background-color: rgba(200, 200, 200, 0);
+        }
+
+        .category_item .category_item_content .btn_explorer {
+            min-width: 200px;
+            padding: 15px 30px;
+            border-radius: 0 !important;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            font-size: 24px;
+        }
+
+        .category_item .category_item_content .title {
+            margin: 10px;
+            color: var(--main-green);
+            font-size: 30px;
+            text-align: center;
+        }
+        .category_item .category_item_content .description {
+            margin: 10px;
+            color: var(--main-orange);
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+    <title>REWAQ BOOKSTORE</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="main_header" style="min-height: 150px;
+        max-height: 150px;
+        background: none;
+        ">
+
+            <section style="background-color: #ececec;" class="nav_container" id="nav_container">
+                <div class="logo_container">
+                    <a href="/index.html">
+                        <img src="./images/logo.png" alt="
+                        REWAQ LOGO
+                        " height="80px" style="margin-top: 10px;">
+                    </a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <a href="index.html" class="header_main_link">
+                            <li>HOME</li>
+                        </a>
+                        <a href="categories.html" class="header_main_link active">
+                            <li>CATEGORIES</li>
+                        </a>
+                        <a href="books.html" class="header_main_link">
+                            <li>BOOKS</li>
+                        </a>
+                        <a href="collections.html" class="header_main_link">
+                            <li>COLLECTIONS</li>
+                        </a>
+                        <a href="contact.html" class="header_main_link">
+                            <li>CONTACT</li>
+                        </a>
+                    </ul>
+                </nav>
+
+                <div class="actions">
+                    <i class="fa fa-shopping-cart" cart-items="01" id="btn_open_cart"></i>
+                    <i class="fa fa-user"></i>
+                </div>
+
+            </section>
+        </header>
+
+        <div class="header_cart_container" id="header_cart_container">
+
+            <i class="fa fa-arrow-right" id="btn_close_cart"></i>
+
+            <div class="shopping-cart">
+
+                <div class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Price</label>
+                    <label class="product-quantity">Quantity</label>
+                    <label class="product-line-price">Total</label>
+                </div>
+
+                <div class="cart_items_container">
+
+                    <div class="book_cart_item">
+
+                        <i class="fa fa-remove delete_item"></i>
+
+                        <div class="book_cart_image">
+                            <img src="./images/p/p1.jpg">
+                        </div>
+
+                        <div class="book_cart_details">
+
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+
+                            <div class="book_cart_price">12.99</div>
+
+                            <b>03</b>
+
+                            <div class="book_cart_line-price">25.98</div>
+
+                        </div>
+
+                    </div>
+                    <div class="book_cart_item">
+
+                        <i class="fa fa-remove delete_item"></i>
+
+                        <div class="book_cart_image">
+                            <img src="./images/p/p1.jpg">
+                        </div>
+
+                        <div class="book_cart_details">
+
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+
+                            <div class="book_cart_price">12.99</div>
+
+                            <b>03</b>
+
+                            <div class="book_cart_line-price">25.98</div>
+
+                        </div>
+
+                    </div>
+                    <div class="book_cart_item">
+
+                        <i class="fa fa-remove delete_item"></i>
+
+                        <div class="book_cart_image">
+                            <img src="./images/p/p1.jpg">
+                        </div>
+
+                        <div class="book_cart_details">
+
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+
+                            <div class="book_cart_price">12.99</div>
+
+                            <b>03</b>
+
+                            <div class="book_cart_line-price">25.98</div>
+
+                        </div>
+
+                    </div>
+                    <div class="book_cart_item">
+
+                        <i class="fa fa-remove delete_item"></i>
+
+                        <div class="book_cart_image">
+                            <img src="./images/p/p1.jpg">
+                        </div>
+
+                        <div class="book_cart_details">
+
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+
+                            <div class="book_cart_price">12.99</div>
+
+                            <b>03</b>
+
+                            <div class="book_cart_line-price">25.98</div>
+
+                        </div>
+
+                    </div>
+                    <div class="book_cart_item">
+
+                        <i class="fa fa-remove delete_item"></i>
+
+                        <div class="book_cart_image">
+                            <img src="./images/p/p1.jpg">
+                        </div>
+
+                        <div class="book_cart_details">
+
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+
+                            <div class="book_cart_price">12.99</div>
+
+                            <b>03</b>
+
+                            <div class="book_cart_line-price">25.98</div>
+
+                        </div>
+
+                    </div>
+                    <div class="book_cart_item">
+
+                        <i class="fa fa-remove delete_item"></i>
+
+                        <div class="book_cart_image">
+                            <img src="./images/p/p1.jpg">
+                        </div>
+
+                        <div class="book_cart_details">
+
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+
+                            <div class="book_cart_price">12.99</div>
+
+                            <b>03</b>
+
+                            <div class="book_cart_line-price">25.98</div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="cart_total_container">
+                    <div class="totals">
+                        <div class="totals-item">
+                            <label>Subtotal</label>
+                            <div class="totals-value" id="cart-subtotal">71.97</div>
+                        </div>
+                        <div class="totals-item">
+                            <label>Tax (5%)</label>
+                            <div class="totals-value" id="cart-tax">3.60</div>
+                        </div>
+                        <div class="totals-item">
+                            <label>Shipping</label>
+                            <div class="totals-value" id="cart-shipping">15.00</div>
+                        </div>
+                        <div class="totals-item totals-item-total">
+                            <label>Grand Total</label>
+                            <div class="totals-value" id="cart-total">90.57</div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <a href="./cart.html" class="continue_tocart">Continue to cart</a>
+                        <a href="./checkout.html" class="checkout">Checkout</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="book_main" style="height: max-content;">
+
+        <section class="book_container" style="height: auto;">
+
+            <div class="header">
+                <div>
+                    <h2 style="color: teal;">BOOKS CATEGORIES</h2>
+                </div>
+            </div>
+
+            <div class="news_letter_container">
+
+                <div class="input_container" style="width: 100%;
+                max-width: 700px;
+                margin: 0;
+                ">
+                    <input type="text" placeholder="type a category name .." style="border-color: teal;
+                    border-radius: 50px;
+                    padding-left: 10px;
+                    ">
+                    <button class="btn_subscribe" style="background-color: teal;">
+                        <i class="fa fa-search"></i>
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <div class="categories_container" style="padding: 0;">
+
+                <div class="categories_content">
+
+                    <div class="category_item"
+                    style="background-image: url('./images/p/p5.jpeg');"
+                    >
+                        <div class="category_item_content">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+                            <p class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing 
+                                elit. Impedit animi ratione qui,
+                                enim consectetur fugiat!
+                            </p>
+                            <a href="./category_item.html">
+                            <button class="btn btn_explorer">EXPLORER</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category_item"
+                    style="background-image: url('./images/p/p2.jpeg');"
+                    >
+                        <div class="category_item_content">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+                            <p class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing 
+                                elit. Impedit animi ratione qui,
+                                enim consectetur fugiat!
+                            </p>
+                            <a href="./category_item.html">
+                            <button class="btn btn_explorer">EXPLORER</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category_item"
+                    style="background-image: url('./images/p/p1.jpeg');"
+                    >
+                        <div class="category_item_content">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+                            <p class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing 
+                                elit. Impedit animi ratione qui,
+                                enim consectetur fugiat!
+                            </p>
+                            <a href="./category_item.html">
+                            <button class="btn btn_explorer">EXPLORER</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category_item"
+                    style="background-image: url('./images/p/p3.jpeg');"
+                    >
+                        <div class="category_item_content">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+                            <p class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing 
+                                elit. Impedit animi ratione qui,
+                                enim consectetur fugiat!
+                            </p>
+                            <a href="./category_item.html">
+                            <button class="btn btn_explorer">EXPLORER</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category_item"
+                    style="background-image: url('./images/p/p4.jpeg');"
+                    >
+                        <div class="category_item_content">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+                            <p class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing 
+                                elit. Impedit animi ratione qui,
+                                enim consectetur fugiat!
+                            </p>
+                            <a href="./category_item.html">
+                            <button class="btn btn_explorer">EXPLORER</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category_item"
+                    style="background-image: url('./images/p/p4.jpeg');"
+                    >
+                        <div class="category_item_content">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+                            <p class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing 
+                                elit. Impedit animi ratione qui,
+                                enim consectetur fugiat!
+                            </p>
+                            <a href="./category_item.html">
+                            <button class="btn btn_explorer">EXPLORER</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category_item"
+                    style="background-image: url('./images/p/p5.jpg');"
+                    >
+                        <div class="category_item_content">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+                            <p class="description">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing 
+                                elit. Impedit animi ratione qui,
+                                enim consectetur fugiat!
+                            </p>
+                            <a href="./category_item.html">
+                            <button class="btn btn_explorer">EXPLORER</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class='pagination-container'>
+
+                <div class="pagination">
+
+                    <p class="
+                    pagination-item
+                    pagination-disabed-item prev-page">
+                        &#10094;
+                    </p>
+
+                    <p class="pagination-item pagination-active-item">
+                        1
+                    </p>
+                    <p class="pagination-item">
+                        2
+                    </p>
+                    <p class="pagination-item">
+                        3
+                    </p>
+                    <p class="pagination-item">
+                        4
+                    </p>
+                    <p class="pagination-item">
+                        5
+                    </p>
+
+                    <p class="next-pag pagination-item 
+                    pagination-active-itemk
+                    next-page pagination-item">
+                        &#10095;
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <div style="
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: azure;
+    min-height: 300px;
+    max-width: 1500px;
+    width: 100%;
+    margin: 40px auto;
+    align-items: center;
+    gap: 40px;
+    ">
+        <div class="images" style="display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding: 20px;
+        gap: 40px;
+        ">
+
+            <img src="./images/p/p3.jpeg" alt="book image" srcset="" style="background-color: #efefef;
+        width: 190px;
+        height: 250px;
+        padding: 5px;
+        border-radius: 4px;
+        ">
+            <img src="./images/p/p1.jpg" alt="book image" srcset="" style="background-color: #efefef;
+        width: 190px;
+        height: 250px;
+        padding: 5px;
+        border-radius: 4px;
+        ">
+            <img src="./images/p/p5.jpeg" alt="book image" srcset="" style="background-color: #efefef;
+        width: 190px;
+        height: 250px;
+        padding: 5px;
+        border-radius: 4px;
+        ">
+            <img src="./images/book_cover1.jpg" alt="book image" srcset="" style="background-color: #efefef;
+        width: 190px;
+        height: 250px;
+        padding: 5px;
+        border-radius: 4px;
+        ">
+
+
+
+        </div>
+
+        <div class="content">
+            <h2 style="color: var(--main-orange);
+            font-family: monospace;
+            font-size:35px;
+            ">FIND YOUR FAVOURITE BOOKS HERE</h2>
+            <p style="
+            color: #121212;
+            font-size: 20px;
+            line-height: 30px;
+            padding: 20px 40px 20px 0;
+            max-width: 100%;
+            word-wrap: normal;
+            ">
+                Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Eveniet delectus expedita a sed animi
+                adipisci vero, nesciunt dicta hic beatae dolorum, voluptas
+                fugit quisquam esse commodi repudiandae sapiente blanditiis non.
+                Quas error esse beatae voluptatibus id provident expedita iste rerum,
+                obcaecati, enim maxime cupiditate vel voluptates
+                earum iure? A, debitis?
+            </p>
+
+            <a href="/books" class="btn_explorer" style="border: 1px solid black;
+            background-color: var(--main-green);
+            padding: 15px 20px;
+            display: block;
+            width: 150px;
+            margin-top: 60px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            "> EXPLORER </a>
+        </div>
+    </div>
+
+
+    <div class="new_books_container">
+        <div class="new_books_header">
+            <div class="new_books_title_container">
+                <h1>NEW BOOKS</h1>
+            </div>
+            <div class="actions">
+                <i class="fa fa-arrow-left icon" onclick="prevSlide()" id="new_books_prev_btn"></i>
+                <i id="new_books_next_btn" class="fa fa-arrow-right icon active" onclick="nextSlide()"></i>
+            </div>
+        </div>
+
+        <div class="new_books_content">
+
+            <div class="carousel">
+
+                <div class="carousel_container">
+
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/p/p1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/p/p4.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/p/p5.jpeg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/p/p4.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel_item new_book_item">
+                        <div class="book_image_container">
+                            <img src="./images/book_cover1.jpg" alt="">
+                        </div>
+                        <div class="book_content_container">
+                            <h1 class="title">Lorem ipsum dolor sit.</h1>
+
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas quia voluptate commodi quod fugit. Obcaecati at facilis
+                                assumenda
+                                <a href="" class="more_link">More</a>
+                            </p>
+
+                            <p class="author">
+                                <span>By</span>
+                                <span>Mark manson</span>
+                            </p>
+
+                            <section class="votes_container">
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="votes_num">
+                                    <span>(121)</span>
+                                </div>
+
+                            </section>
+                            <h3 class="price">90 <span>DH</span></h3>
+
+                            <button class="btn btn_add_to_cart">Add to cart</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="reviews_container">
+
+        <h2 class="our_customer_title">
+            Our customers
+        </h2>
+
+        <div class="reviews_content">
+
+            <div class="review_item">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p class="review_content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam, vel rem. Quidem, repellendus. Error debitis nisi, aliquam
+                </p>
+
+                <div class="user_container">
+                    <i class="fa fa-user user_icon"></i>
+                    <div>
+                        <h4 class="user_name">Hamza ougjjou</h4>
+                        <h6 class="book_title">th secret</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review_item">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p class="review_content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam, vel rem. Quidem, repellendus. Error debitis nisi, aliquam
+                </p>
+
+                <div class="user_container">
+                    <i class="fa fa-user user_icon"></i>
+                    <div>
+                        <h4 class="user_name">Hamza ougjjou</h4>
+                        <h6 class="book_title">th secret</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review_item">
+
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p class="review_content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam, vel rem. Quidem, repellendus. Error debitis nisi, aliquam
+                </p>
+
+                <div class="user_container">
+                    <i class="fa fa-user user_icon"></i>
+                    <div>
+                        <h4 class="user_name">Hamza ougjjou</h4>
+                        <h6 class="book_title">th secret</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="news_letter_container txt-center">
+        <h1 class="title">
+            join ournews letter
+        </h1>
+
+        <div class="input_container">
+            <input type="email" placeholder="Enter Your Emal">
+            <button class="btn_subscribe">Get Started</button>
+        </div>
+    </div>
+
+
+    <footer class="">
+        <div class="container">
+            <div class="info-foot">
+                <div class="col">
+                    <h2>
+                        Lorem, ipsum.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quae maxime omnis molestiae magni aperiam reiciendis
+                        voluptatum harum dicta impedit? Maxime nobis quis pariatur
+                        alias veritatis. Id vitae eveniet accusamus exercitationem, ullam quaerat,
+                        autem facilis nobis ratione aut ad, dicta natus!
+                        <!-- A small river named Duden flows by their 
+                        place and supplies it with the necessary regelialia. -->
+                    </p>
+                    <div class="icon-socail-foot">
+                        <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Latest News</h2>
+                    <ul>
+                        <li><img src="./images/p/p2.jpeg" alt="">
+                            <a href="#">Even the all-powerful Pointing has no control about
+                                <span>April 7, 2020 Admin 19</span>
+                            </a>
+                        </li>
+                        <li><img src="./images/p/p1.jpg" alt="">
+                            <a href="#">Even the all-powerful Pointing has no control about
+                                <span>April 7, 2020 Admin 19</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Have a Questions?</h2>
+                    <ul>
+                        <li>203 Fake St. Mountain View, San Francisco, California, USA</li>
+                        <li><a href="tel:9837873">+2 392 3929 210</a></li>
+                        <li><a href="mailto:@knfl.gmail.com">info@yourdomain.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">Copyright ©2022 All rights reserved | This template is made with <i
+                    class="fa-solid fa-heart"></i> by
+                <a href="mailto:hamzaougjjou04@gmail.com">hamza ougjjou</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="/js/carousel.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/cart.js"></script>
+
+</body>
+
+</html>

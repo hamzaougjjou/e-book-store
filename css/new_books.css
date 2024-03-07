@@ -1,0 +1,166 @@
+.new_books_container{
+    background-color: rgb(235, 235, 235);
+    padding: 50px;
+    position: relative;
+}
+.new_books_container .new_books_header {
+    display: flex;
+    padding: 10px 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.new_books_container .new_books_content {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.new_books_container .new_books_header .new_books_title_container h1 {
+    position: relative;
+}
+
+.new_books_container .new_books_header .new_books_title_container h1::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: -8px;
+    left: 0;
+    background-color: orange;
+}
+
+.new_books_container .new_books_header .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.new_books_container .new_books_header .actions .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(201, 201, 201);
+}
+
+.new_books_container .new_books_header .actions .icon.active {
+    background-color: orange;
+}
+
+.new_books_container .new_books_header .actions .icon:hover {
+    background-color: rgb(221, 156, 34);
+}
+
+.new_books_container .carousel .carousel_container {
+    gap: 30px;
+}
+
+.new_books_container .new_book_item {
+    background-color: var(--main-pink);
+    width: 450px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.new_books_container .new_book_item .book_image_container {
+    background-color: white;
+    width: 170px;
+    height: 220px;
+    object-fit: cover;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.new_books_container .new_book_item .book_image_container img {
+    background-color: white;
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.new_books_container .new_book_item .book_content_container {
+    padding: 8px;
+}
+
+
+.new_books_container .new_book_item .book_content_container .title {
+    color: var(--main-orange);
+    font-size: 21px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.new_books_container .new_book_item .book_content_container .description {
+    color: gray;
+    font-size: 16px;
+    text-indent: 3px;
+    word-break: break-all;
+}
+
+.new_books_container .new_book_item .book_content_container .description .more_link {
+    color: var(--main-orange);
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.new_books_container .new_book_item .book_content_container .author {
+    color: black;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    padding: 5px;
+}
+
+.new_books_container .new_book_item .book_content_container .votes_container {
+    display: flex;
+    gap: 20px;
+}
+
+.new_books_container .new_book_item .book_content_container .votes_container .stars i {
+    color: rgb(250, 150, 0);
+}
+
+.new_books_container .new_book_item .book_content_container .votes_container .votes_num span{
+    color: rgb(250, 150, 0);
+}
+.new_books_container .new_book_item .book_content_container .price{
+    color: rgb(0, 0, 0);
+    padding: 6px 2px;
+    font-size: 16px;
+}
+.new_books_container .new_book_item .book_content_container .btn_add_to_cart{
+    background-color: var(--main-orange);
+    color: rgb(255, 255, 255);
+    padding: 6px 2px;
+    font-size: 18px;
+    width: 125px;
+    color: white;
+}
+
+
+.new_books_container .new_book_item::after{
+    content: 'new';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    font-weight: bold;
+    background-color: var(--main-red);
+    top: -10px;
+    right: -10px;
+    z-index: 999;
+}
+
