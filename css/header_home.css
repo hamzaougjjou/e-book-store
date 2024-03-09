@@ -1,11 +1,11 @@
 .main_header{
-    min-height: 800px;
+
     width: 100%;
-    background-color: #eee;
+    /* background-color: #eee; */
     background-image: url("./../images/hero_bg_3.jpg");
     height: 750px;
     background-position: 0px -280px;
-    background-size: 100vw 100vh;
+    background-size: cover;
     background-clip: content-box;
     background-repeat: no-repeat;
     background-attachment: fixed;

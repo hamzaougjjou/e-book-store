@@ -15,7 +15,8 @@
 }
 .categories_container .category_item {
     background-color: rgb(245, 245, 245);
-    width: 550px;
+    width: cslc( 50% - 30px );
+    max-width: 550px;
     height: 300px;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -81,3 +82,83 @@
     z-index: 999;
 }
 
+
+@media screen and (max-width: 1300px) {
+    .categories_container{
+        padding: 0px;
+    }
+
+    .categories_container .categories_content{
+        gap: 10px;
+    }
+    .categories_container .category_item {
+        background-color: rgb(245, 245, 245);
+        max-width: calc( 50% - 30px );
+        width: 550px;
+        height: fit-content;
+        max-height: 400px;
+        grid-template-columns: auto 1fr;
+        padding: 15px 6px;
+    }
+
+
+    .categories_container .category_item .category_image_container {
+        margin-left: 10px;
+    }
+
+    .categories_container .category_item .category_image_container img {
+        width: 100px;
+        height: auto;
+        max-height: 200px;
+        transform: none;
+        margin-right: 10px;
+    }
+
+    .categories_container .category_item .category_content_container .title {
+        font-size: 18px;
+    }
+    
+    .categories_container .category_item .category_content_container .description{
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .categories_container{
+        padding: 10px;
+    }
+
+    .categories_container .categories_content{
+        display: block;
+    }
+    .categories_container .category_item {
+        background-color: rgb(245, 245, 245);
+        max-width: 100%;
+        margin: 20px auto;
+        width: 550px;
+        height: 300px;
+        max-height: 400px;
+    }
+
+
+    .categories_container .category_item .category_image_container img {
+        width: 160px;
+        height: auto;
+        max-height: 300px;
+        transform: none;
+    }
+
+    .categories_container .category_item .category_content_container .title {
+        font-size: 18px;
+    }
+
+    .categories_container .category_item .category_content_container .description{
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 1.2rem;
+    }
+
+}

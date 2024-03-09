@@ -32,18 +32,22 @@
 
         <header class="main_header">
 
-            <section style="background-color: #efefef;" class="nav_container" id="nav_container">
+         
+            <section class="nav_container" id="nav_container">
+
+                <i class="fa fa-bars" id="btn_open_main_menu"></i>
+
                 <div class="logo_container">
-                    <a href="/index.html">
+                    <a href="/">
                         <img src="./images/logo.png" alt="
                         REWAQ LOGO
                         " height="80px" style="margin-top: 10px;">
                     </a>
                 </div>
 
-                <nav>
+                <nav id="main_left_menu">
                     <ul>
-                        <a href="index.html" class="header_main_link">
+                        <a href="index.html" class="header_main_link active">
                             <li>HOME</li>
                         </a>
                         <a href="categories.html" class="header_main_link">
@@ -55,15 +59,24 @@
                         <a href="collections.html" class="header_main_link">
                             <li>COLLECTIONS</li>
                         </a>
+                        <a href="contact.html" class="header_main_link">
+                            <li>CONTACT</li>
+                        </a>
                     </ul>
                 </nav>
 
                 <div class="actions">
+
                     <i class="fa fa-shopping-cart" cart-items="01" id="btn_open_cart"></i>
-                    <i class="fa fa-user active"></i>
+
+                    <a href="login.html">
+                        <i class="fa fa-user"></i>
+                    </a>
+
                 </div>
 
             </section>
+
         </header>
 
         <div class="header_cart_container" id="header_cart_container">
@@ -250,12 +263,15 @@
     </div>
 
 
-    <div class="login-page"
-    style="background-image: url('https://i.pinimg.com/564x/c7/77/92/c77792be1223e62b508c74a9f03a41c2.jpg');
+    <div class="login-page" style="background-image: url('./images/front_view_stack_books.jpg');
     background-size: cover;
-    posi
-    "
-    >
+    background-position: center center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -10px !important;
+    ">
         <div class="form">
             <h2 class='auth-title'> login </h2>
             <!-- <i class='close-login-page fa fa-times'> -->
@@ -372,4 +388,15 @@
             </div>
         </div>
 
-    </
+    </footer>
+
+
+    
+    <script src="/js/script.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/cart.js"></script>
+
+</body>
+
+</html>

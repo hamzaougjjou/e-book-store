@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./css/newsleter.css">
     <link rel="stylesheet" href="./css/categories.css">
     <link rel="stylesheet" href="./css/header_home.css">
-    <!-- <link rel="stylesheet" href="./css/books.css"> -->
 
     <title>REWAQ BOOKSTORE</title>
 </head>
@@ -28,7 +27,12 @@
 
         <header class="main_header">
 
+
+
             <section class="nav_container" id="nav_container">
+
+                <i class="fa fa-bars" id="btn_open_main_menu"></i>
+
                 <div class="logo_container">
                     <a href="/">
                         <img src="./images/logo.png" alt="
@@ -36,7 +40,8 @@
                         " height="80px" style="margin-top: 10px;">
                     </a>
                 </div>
-                <nav>
+
+                <nav id="main_left_menu">
                     <ul>
                         <a href="index.html" class="header_main_link active">
                             <li>HOME</li>
@@ -55,6 +60,7 @@
                         </a>
                     </ul>
                 </nav>
+
                 <div class="actions">
 
                     <i class="fa fa-shopping-cart" cart-items="01" id="btn_open_cart"></i>
@@ -64,11 +70,12 @@
                     </a>
 
                 </div>
+
             </section>
 
 
             <div class="hero_container">
-                <div>
+                <div class="hero_text_container">
                     <h2 class="hero_txt">
 
                         <p id="silider_main_text1" style="min-height:40px">
@@ -80,8 +87,8 @@
                     </h2>
 
                     <p class="hero_sub_text">
-                        Books are the quietest and most constant of friends , they are the most accessible ans wisest
-
+                        Books are the quietest and most constant of friends ,
+                        they are the most accessible ans wisest
                         of counselors and most patient of teachers.
                     </p>
                 </div>
@@ -630,7 +637,7 @@
     </div>
 
 
-    <div style="
+    <div class="explor_container" style="
     display: grid;
     grid-template-columns: auto 1fr;
     background-color: azure;
@@ -649,35 +656,35 @@
         ">
 
             <img src="./images/p/p3.jpeg" alt="book image" srcset="" style="background-color: #efefef;
-        width: 190px;
-        height: 250px;
-        padding: 5px;
-        border-radius: 4px;
-        ">
+                    width: 190px;
+                    height: 250px;
+                    padding: 5px;
+                    border-radius: 4px;
+                    ">
             <img src="./images/p/p1.jpg" alt="book image" srcset="" style="background-color: #efefef;
-        width: 190px;
-        height: 250px;
-        padding: 5px;
-        border-radius: 4px;
-        ">
+                    width: 190px;
+                    height: 250px;
+                    padding: 5px;
+                    border-radius: 4px;
+                    ">
             <img src="./images/p/p5.jpeg" alt="book image" srcset="" style="background-color: #efefef;
-        width: 190px;
-        height: 250px;
-        padding: 5px;
-        border-radius: 4px;
-        ">
+                    width: 190px;
+                    height: 250px;
+                    padding: 5px;
+                    border-radius: 4px;
+                    ">
             <img src="./images/book_cover1.jpg" alt="book image" srcset="" style="background-color: #efefef;
-        width: 190px;
-        height: 250px;
-        padding: 5px;
-        border-radius: 4px;
-        ">
+                    width: 190px;
+                    height: 250px;
+                    padding: 5px;
+                    border-radius: 4px;
+                    ">
 
 
 
         </div>
 
-        <div class="content">
+        <div class="text_content">
             <h2 style="color: var(--main-orange);
             font-family: monospace;
             font-size:35px;
@@ -1851,6 +1858,9 @@
 
     </footer>
 
+
+
+    <script src="./js/script.js"></script>
     <script src="/js/carousel.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/cart.js"></script>
