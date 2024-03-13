@@ -97,20 +97,21 @@
         width: 550px;
         height: fit-content;
         max-height: 400px;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 1fr auto;
         padding: 15px 6px;
     }
 
 
     .categories_container .category_item .category_image_container {
         margin-left: 10px;
+        max-width: 200px !important;
     }
 
-    .categories_container .category_item .category_image_container img {
-        width: 100px;
+    .categories_container .category_item img{
+        width: 150px !important;
         height: auto;
         max-height: 200px;
-        transform: none;
+        transform: none !important;
         margin-right: 10px;
     }
 
@@ -145,7 +146,7 @@
 
 
     .categories_container .category_item .category_image_container img {
-        width: 160px;
+        width: 160px !important;
         height: auto;
         max-height: 300px;
         transform: none;

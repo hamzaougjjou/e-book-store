@@ -36,19 +36,22 @@
 
         <header class="main_header">
 
+
+
             <section class="nav_container" id="nav_container">
 
                 <i class="fa fa-bars" id="btn_open_main_menu"></i>
 
                 <div class="logo_container">
-                    <a href="/">
+                    <a href="index.html">
                         <img src="./images/logo.png" alt="
                         REWAQ LOGO
-                        " height="80px" style="margin-top: 10px;">
+                        " height="60px" style="margin-top: 10px;">
                     </a>
                 </div>
 
                 <nav id="main_left_menu">
+                    <i class="fa fa-times" id="btn_close_main_menu"></i>
                     <ul>
                         <a href="index.html" class="header_main_link active">
                             <li>HOME</li>
@@ -1374,69 +1377,9 @@
 
 
     
-    <script src="/js/script.js"></script>
-
+ 
+    <script src="./js/script.js"></script>
     <script src="./js/cart.js"></script>
-
-    <script>
-        window.addEventListener('scroll', function () {
-            var navbar = document.getElementById('nav_container'); // Replace 'yourNavbarId' with the actual id of your navigation bar
-            var scrollPosition = window.scrollY;
-            var documentHeight = document.body.scrollHeight;
-            var windowHeight = window.innerHeight;
-
-            // Calculate how far the user has scrolled from the bottom of the page
-            var scrollFromBottom = documentHeight - (scrollPosition + windowHeight);
-
-            // Set background opacity based on scroll position
-            if (scrollPosition < 200) { // You can adjust this threshold value as needed
-                navbar.style.background = 'rgba( 220,  220,  220, 0)'; // Adjust the last value (0.7) for background opacity
-            } else {
-                navbar.style.background = 'rgba( 220,  220,  220, 1)'; // Fully opaque background color
-            }
-        });
-
-    </script>
-
-
-
-    <script>
-
-        var slideIndex = 1;
-        const slides = document.getElementsByClassName("mySlides");
-
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-
-        let index = 1;
-        setInterval(() => {
-            currentSlide(index);
-            index++;
-            if (index == slides.length) {
-                index = 1;
-            }
-        }, 5000);
-
-
-    </script>
-
 
 </body>
 

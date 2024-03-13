@@ -28,12 +28,13 @@
     position: absolute;
     /* position: relative; */
     z-index: 1;
-    background: #efefef;
-    max-width: 500px;
+    background: teal;
+    max-width: 500px !important;
+    width: calc( 100% - 20px );
     padding: 45px;
     text-align: center;
     /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0px 2px 5px 0px rgba(0, 0, 0, 0.24); */
-    top: 50%;
+    top: calc( 50% + 30px );
     left: 50%;
     transform: translate(-50%, -50%);
 }

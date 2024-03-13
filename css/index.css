@@ -129,7 +129,8 @@
 }
 
 .header_cart_container .shopping-cart .book_cart_item img {
-    max-width: 100px;
+    max-width: 100px !important;
+    max-height: 200px !important;
     margin-left: 2px;
 }
 
@@ -243,12 +244,5 @@
         padding-bottom: 15px;
     }
 
-    .main_header{
-        width: 100%;
-        background-image: url("./../images/hero_bg_3.jpg");
-        height: 600px !important;
-        background-position: center center !important;
-        background-color: aquamarine;
-    }
     
 }

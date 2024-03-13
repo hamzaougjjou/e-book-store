@@ -9,7 +9,7 @@ btn_open_cart.addEventListener("click", () => {
     header_cart_container.style.animationName = "openCart";
     header_cart_container.style.transitionTimingFunction = "ease";
     header_cart_container.style.animationDuration = "0.4s";
-    
+
     header_cart_container.style.width = "500px";
 })
 
@@ -23,4 +23,4 @@ btn_close_cart.addEventListener("click", () => {
         header_cart_container.style.display = "none";
     }
         , 400);
-})
+});
