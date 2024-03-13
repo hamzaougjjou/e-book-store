@@ -86,9 +86,12 @@ li {
     transform: scale(1.1);
 }
 
+#btn_close_main_menu {
+    display: none;
+}
 
 #btn_open_main_menu {
-    display: none !important;
+    display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -149,6 +152,7 @@ li {
     }
 
     #btn_close_main_menu {
+        display: block;
         font-size: 30px;
         position: absolute;
         right: 0px;
@@ -162,7 +166,7 @@ li {
         height: 50px;
     }
 
-    #btn_close_main_menu:hover{
+    #btn_close_main_menu:hover {
         background-color: rgb(201, 7, 7);
         color: white;
         cursor: pointer;
