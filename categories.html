@@ -22,6 +22,58 @@
 
 
     <title>REWAQ BOOKSTORE</title>
+
+
+    
+    <style>
+        .category_item {
+            background: #121212;
+            background-size: cover;
+            background-position: center center;
+            padding: 0 !important;
+            display: block !important;
+            max-width: 100% !important;
+            margin: 20px 0;
+        }
+
+        .category_item .category_item_content {
+            background-color: rgba(0, 0, 0, 0.6);
+            /* width: 100%; */
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in;
+        }
+
+        .category_item .category_item_content:hover {
+            background-color: rgba(200, 200, 200, 0);
+        }
+
+        .category_item .category_item_content .btn_explorer {
+            min-width: 200px;
+            padding: 15px 30px;
+            border-radius: 0 !important;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            font-size: 24px;
+        }
+
+        .category_item .category_item_content .title {
+            margin: 10px;
+            color: var(--main-green);
+            font-size: 30px;
+            text-align: center;
+        }
+        .category_item .category_item_content .description {
+            margin: 10px;
+            color: var(--main-orange);
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
