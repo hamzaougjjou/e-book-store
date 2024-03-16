@@ -1,5 +1,8 @@
 
-
+.main_row{
+   max-width: 1200px !important;
+   margin: 0 auto !important;
+}
 /* =========================================== */
 input , textarea{
     outline: none;
@@ -140,7 +143,7 @@ span.price {
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
     .row {
         flex-direction: column-reverse;
     }
@@ -148,4 +151,4 @@ span.price {
     .col-25 {
         margin-bottom: 20px;
     }
-} */
+}
