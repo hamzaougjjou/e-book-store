@@ -91,6 +91,67 @@
             font-size: 20px;
             text-align: center;
         }
+
+
+        @media (max-width: 600px) {
+
+        
+
+            .carousel_container {
+                display: block;
+                padding: 0px;
+                margin: 0 auto;
+                overflow-y: visible;
+                max-height: fit-content;
+                overflow: visible;
+            }
+
+            .carousel_container .new_book_item {
+                width: 400px;
+                max-width: calc(100% - 0px);
+                margin: 10px auto;
+                height: max-content !important;
+                display: block !important;
+                position: initial;
+            }
+
+            .carousel_container .new_book_item .book_image_container {
+                background-color: transparent !important;
+                padding: 0 !important;
+                padding-top: 5px !important;
+            }
+
+            .carousel_container .new_book_item .book_image_container img {
+                position: initial;
+                display: block;
+                max-height: 200px;
+                padding: 0 !important;
+                margin: 0 !important;
+                width: auto;
+                margin: 0 auto;
+            }
+
+            .carousel_container .new_book_item .book_item_body {
+                height: auto;
+                position: initial;
+            }
+
+
+            .new_books_content ,
+            .carousel ,
+            .carousel_container
+            {
+                padding: 0 !important;
+            }
+
+
+        }
+
+        /* <div class="new_books_content">
+            <div class="new_books_content">
+                <div class="carousel">
+                    <div class="carousel_container">
+                        <div class="carousel_item new_book_item"> */
     </style>
 </head>
 

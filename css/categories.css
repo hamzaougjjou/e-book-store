@@ -15,11 +15,11 @@
 }
 .categories_container .category_item {
     background-color: rgb(245, 245, 245);
-    width: cslc( 50% - 30px );
+    width: calc( 50% - 30px );
     max-width: 550px;
     height: 300px;
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     position: relative;
     padding: 5px 8px;
@@ -27,6 +27,7 @@
 .categories_container .category_item .category_image_container {
     object-fit: cover;
     margin-left: 10px;
+    width: 300px;
 }
 .categories_container .category_item .category_image_container img {
     width: 150px;
@@ -36,6 +37,7 @@
     transform: rotateZ( 8deg );
     margin-right: 20px;
 }
+
 .categories_container .category_item .category_content_container .title {
     color: var(--main-orange);
     font-size: 21px;
@@ -163,3 +165,48 @@
     }
 
 }
+@media screen and (max-width: 500px) {
+    .categories_container{
+        padding: 5px;
+    }
+
+    .categories_container .categories_content{
+        display: block;
+    }
+    .categories_container .category_item {
+        background-color: rgb(245, 245, 245);
+        display: block;
+        max-width: 100%;
+        margin: 10px auto;
+        height: max-content !important;
+        width: cslc( 100% - 10px );
+        padding: 5px;
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+
+    .categories_container .category_item .category_image_container{
+        position: static;
+        width: 100%;
+    }
+    .categories_container .category_item .category_image_container img {
+        max-width: 120px !important;
+        width: auto !important;
+        max-height: 150px;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .categories_container .category_item .category_content_container .title {
+        font-size: 18px;
+    }
+
+    .categories_container .category_item .category_content_container .description{
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 1.2rem;
+    }
+
+}
+v>

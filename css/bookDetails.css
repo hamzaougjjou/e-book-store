@@ -27,13 +27,11 @@
   left: 50%;
   top: 20px;
   max-width: 90%;
-  max-height: 500px;
+  height: 350px;
+  object-fit: fill;
+
   transform: translate(-50%, 0);
   transition: all 0.3s ease;
-}
-
-.left-column img.active {
-  opacity: 1;
 }
 
 
@@ -338,7 +336,7 @@
 .review-item {
   width: 300px;
   height: 190px;
-  background-color: #fffde0;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 1px 4px 0px #cecece;
   padding: 10px;
@@ -402,6 +400,12 @@
 
 
 /* =========================================== */
+.books_container{
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* =========================================== */
 
 /* Responsive */
 @media (max-width: 940px) {
@@ -420,16 +424,41 @@
     max-width: 200px !important;
     max-height: 300px !important;
     width: 200px;
-    background: red;
     right: 0;
     top: -65px;
     left: initial;
   }
 }
 
-@media (max-width: 535px) {
+
+@media (max-width: 600px) {
   .left-column img {
-    width: 220px;
-    top: -85px;
+    width: 150px;
+    right: 0 !important;
+    top: -70px;
+    position: absolute;
+    left: auto;
+    max-width: 90%;
+    height: auto;
+    transform: none;
+    transition: all 0.3s ease;
+  }
+
+  .books_container{
+    padding: 0;
+  }
+  .books_container .new_book_item{
+    width: calc( 100% - 10px );
+    margin: 20px auto;
+    height: auto;
+    display: block;
+  }
+  .books_container .new_book_item .book_image_container{
+    width: 100%;
+    background-color: transparent;
+    margin: 2px auto;
+    height: auto;
+    display: block;
   }
 }
+

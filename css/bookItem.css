@@ -5,6 +5,7 @@
     border-radius: 8px;
     padding: 10px;
     background-color: #ffffff;
+    background-color: #8cf094a6;
     position: relative;
 }
 
@@ -127,4 +128,53 @@
         width: calc( 100% - 190px );
     }
     
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .best_seller_content{
+        padding: 0;
+    }
+    .book_item {
+        width: 400px;
+        max-width: calc(100% - 10px);
+        margin: 0;
+        margin: 0px auto;
+        height: max-content;
+        background-color: #8cf094a6;
+        position: initial;
+    }
+
+    .book_item .book_image {
+        position: initial;
+        display: block;
+        max-height: 200px;
+        width: auto ;
+        margin: 0 auto;
+    }
+
+    .book_item .book_item_body {
+        height: auto;
+        position: initial;
+    }
+
+    .book_item .book_item_body .book_item_body_content {
+        position: initial;
+        width: 100%;
+        height: initial;
+        color: #141414;
+        padding-left: 10px;
+    }
+
+    .book_item .book_item_footer {
+        width: 100%;
+        position:initial;
+    }
+
 }

@@ -96,10 +96,19 @@
         gap: 10px;
     }
 }
-@media screen and (max-width: 770px) {
+
+
+
+@media screen and (max-width: 600px) {
+    .reviews_container .reviews_content{
+        display: block;
+        padding: 0;
+    }
     .reviews_container .reviews_content .review_item{
         width: 100%;
-        width: calc( 100% - 20px );
+        width: calc( 100% - 40px );
+        margin: 0px auto;
+        margin-top: 30px;
     }
     .reviews_container .reviews_content{
         display: block;
