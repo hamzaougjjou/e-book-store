@@ -80,24 +80,16 @@
 }
 
 .header_cart_container .shopping-cart {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
     height: calc(100% - 30px);
     position: relative;
 }
 
-.header_cart_container .shopping-cart .column-labels {
-    display: grid;
-    background-color: #efefef;
-    grid-template-columns: 100px 1fr auto auto auto;
-    gap: 15px;
-    padding: 10px 8px;
-}
+
 
 .header_cart_container .shopping-cart .cart_items_container {
     overflow-y: auto;
     overflow-x: auto;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 260px);
     /* position: relative; */
 }
 
@@ -128,43 +120,6 @@
     position: relative;
 }
 
-.header_cart_container .shopping-cart .book_cart_item img {
-    max-width: 100px !important;
-    max-height: 200px !important;
-    margin-left: 2px;
-}
-
-.header_cart_container .shopping-cart .book_cart_item .book_cart_details {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 25px;
-}
-
-
-.header_cart_container .shopping-cart .book_cart_item .book_cart_details *:nth-child(1) {
-    text-align: left;
-    max-width: 150px;
-}
-
-.header_cart_container .shopping-cart .book_cart_item .book_cart_details *:nth-child(4) {
-    text-align: left;
-    height: 30px;
-}
-
-.delete_item {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-    padding-top: 8px;
-    text-align: center;
-    top: 0px;
-    left: 0px;
-    background-color: rgb(224, 43, 43);
-    border-radius: 50px;
-    cursor: pointer;
-    color: #fff;
-}
 
 
 .cart_total_container {
@@ -212,6 +167,41 @@
 
 
 
+/* ------------------------------------------ */
+
+.cart_items_container {
+    display: block;
+    margin: 0 auto !important;
+    max-width: 1500px !important;
+}
+
+table,
+tr,
+td {
+    border: 0px solid rgb(255, 255, 255);
+    margin: 0 !important;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+tr,
+td {
+    border: 0px solid rgb(255, 255, 255);
+    margin: 0 !important;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #a2ff8f6b;
+}
+
+tr:nth-child(odd) {
+    background-color: #1fbd0067;
+}
+
 
 @media screen and (max-width: 1000px) {
     .explor_container {
@@ -229,7 +219,8 @@
         padding: 20px;
         text-align: center;
     }
-    .explor_container .text_content .btn_explorer{
+
+    .explor_container .text_content .btn_explorer {
         margin-left: 50px;
         margin-bottom: 40px;
     }
@@ -238,11 +229,11 @@
         margin-top: 5px;
         margin-bottom: 6px;
     }
-    
+
     .best_seller_title {
         padding-top: 5px;
         padding-bottom: 15px;
     }
 
-    
+
 }

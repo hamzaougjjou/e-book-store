@@ -1,35 +1,4 @@
-.cart-container {
-    margin: 0 auto;
-    /* max-width: 1200px; */
-    /* background-color: rgba(255, 209, 209, 0.226); */
-}
 
-.cart-container .cart-header {
-    background-color: rgb(255, 255, 255);
-    padding: 20px 10px;
-}
-
-.cart-item {
-    -webkit-box-shadow: 0 10px 6px -6px #777 !important;
-    -moz-box-shadow: 0 10px 6px -6px #777 !important;
-    box-shadow: 0px 1px 12px -6px #777 !important;
-    padding: 20px;
-}
-
-.cart-item:nth-child(odd) {
-    background-color: aliceblue;
-    margin-top: 10px;
-}
-
-.cart-item:nth-child(even) {
-    background-color: rgb(241, 241, 241);
-    margin-top: 20px;
-}
-
-.cart-container .cart-title {
-    text-align: center;
-    padding: 20px;
-}
 
 .cart-container .heading {
     display: flex;
@@ -70,80 +39,6 @@
     background-color: rgb(246, 150, 121);
     right: 10px;
     transition: .5s;
-}
-
-.cart .cartWrap li {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    justify-content: space-between;
-    /* align-items: center; */
-}
-
-.cart .cartWrap li .cartSection img {
-    width: 100px;
-}
-
-.increase-section {
-    display: flex;
-    gap: 10px;
-    padding: 20px 10px 10px 10px;
-    align-items: center;
-}
-
-.increase-section .unit-price span {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.increase-section i {
-    display: block;
-    padding: 10px;
-    background-color: rgb(0, 174, 255);
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.item-name-container {
-    position: relative;
-}
-
-.item-name-container h3 {
-    position: absolute;
-    top: 10px;
-}
-
-.item-name-container .stockStatus {
-    position: absolute;
-    bottom: 15px;
-    font-weight: bold;
-    font-size: 25px;
-    color: rgb(0, 255, 76);
-}
-
-.prodTotal p {
-    padding: 20px;
-    font-weight: bold;
-    color: rgb(38, 227, 38);
-}
-
-.prodTotal p span {
-    text-transform: uppercase;
-    padding: 20px;
-    font-weight: bold;
-}
-
-.removeWrap {
-    background-color: red;
-    cursor: pointer;
-    border-radius: 3px;
-    height: min-content;
-}
-
-.removeWrap i {
-    display: block;
-    padding: 6px;
-    font-size: 25px;
-    color: #fff;
 }
 
 /* ===================================== */
@@ -288,87 +183,6 @@
     margin: 0 auto;
 }
 
-.shopping-cart .column-labels {
-    display: grid;
-    background-color: #efefef;
-    grid-template-columns: 100px 350px auto auto auto;
-    gap: 15px;
-    padding: 10px 8px;
-    max-height: 1200px;
-}
-
-.shopping-cart .cart_items_container {
-    overflow-y: auto;
-    overflow-x: auto;
-    height: fit-content;
-    /* position: relative; */
-}
-
-.shopping-cart .cart_items_container::-webkit-scrollbar {
-    background-color: rgb(161, 161, 161);
-    width: 10px;
-    color: #fff;
-    position: absolute !important;
-    left: 40px;
-}
-
-.shopping-cart .cart_items_container::-webkit-scrollbar-thumb {
-    background-color: rgb(17, 17, 17);
-    width: 4px;
-    border-radius: 15px;
-}
-
-
-.shopping-cart .book_cart_item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 15px;
-    padding: 10px 5px;
-    height: min-content;
-    max-width: 1200px;
-    border-radius: 4px;
-    background-color: rgb(245, 245, 245);
-    margin: 20px auto;
-    position: relative;
-}
-
-.shopping-cart .book_cart_item img {
-    max-width: 100px;
-    margin-left: 2px;
-}
-
-.shopping-cart .book_cart_item .book_cart_details {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 25px;
-}
-
-
-.shopping-cart .book_cart_item .book_cart_details *:nth-child(1) {
-    text-align: left;
-    max-width: 150px;
-}
-
-.shopping-cart .book_cart_item .book_cart_details *:nth-child(4) {
-    text-align: left;
-    height: 30px;
-}
-
-.delete_item {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-    padding-top: 8px;
-    text-align: center;
-    top: 0px;
-    left: 0px;
-    background-color: rgb(224, 43, 43);
-    border-radius: 50px;
-    cursor: pointer;
-    color: #fff;
-}
-
 
 .cart_total_container {
     width: 300px;
@@ -414,10 +228,12 @@
 }
 
 
+/* ------------------------------------------ */
 
-table{
-    margin: 0 auto;
-    width: 120px;
+.cart_items_container{
+    display: block;
+    margin: 0 auto !important;
+    max-width: 1500px !important;
 }
 
 table,
@@ -439,9 +255,9 @@ td {
 
 
 tr:nth-child(even){
-    background-color: #a1ff8f;
+    background-color: #a2ff8f6b;
 }
 
 tr:nth-child(odd){
-    background-color: #1fbd00;
+    background-color: #1fbd0067;
 }

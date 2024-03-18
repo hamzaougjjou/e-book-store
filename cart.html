@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fontOwsome/css/all.css">
+    <link rel="stylesheet" href="./fontOwsome/css/all.min.css">
+    <link rel="stylesheet" href="./fontOwsome/css/solid.css">
+    <link rel="stylesheet" href="./fontOwsome/css/regular.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/newsleter.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -37,7 +40,7 @@
                 <nav id="main_left_menu">
                     <i class="fa fa-times" id="btn_close_main_menu"></i>
                     <ul>
-                        <a href="index.html" class="header_main_link active">
+                        <a href="index.html" class="header_main_link">
                             <li>HOME</li>
                         </a>
                         <a href="categories.html" class="header_main_link">
@@ -95,313 +98,151 @@
 
         <div class="cart">
 
-            <div class='nothing-to-show-container'>
+            <!-- <div class='nothing-to-show-container'>
                 <p>لا يوجد اي منتجات في سلة المشتريات لعرضها</p>
                 <a href="/books" class="continue-shopping">
                     الدهاب الى قائمة الكتب
                 </a>
-            </div>
-
-            <ul class="cartWrap">
+            </div> -->
 
 
-                <div class="header_cart_containerd">
+            <div class="cart_items_container">
 
-                    <table style="padding: 10px;
+                <br />
+
+                
+                <table style="padding: 10px;
                     width: 100%;
                     text-align: left;
                     border: none;
                     outline: none;
                     ">
-                        <tr style="background-color: #efefef;border: none;padding: 10px 0;">
-                            <td style="width: 20%;">
-                                <label class="product-image">Image</label>
-                            </td>
-                            <td style="width: 20%;">
-                                <label class="product-details">Product</label>
-                            </td>
-                            <td>
-                                <label class="product-price">Price</label>
-                            </td>
-                            <td>
-                                <label class="product-quantity">Quantity</label>
-                            </td>
-                            <td>
-                                <label class="product-line-price">Total</label>
-                            </td>
-                        </tr>
+                    <tr style="background-color: #efefef;border: none;padding: 10px 0;">
+                        <td style="width: 20%;">
+                            <label class="product-image">Image</label>
+                        </td>
+                        <td style="width: 20%;">
+                            <label class="product-details">Product</label>
+                        </td>
+                        <td>
+                            <label class="product-price">Price</label>
+                        </td>
+                        <td>
+                            <label class="product-quantity">Quantity</label>
+                        </td>
+                        <td>
+                            <label class="product-line-price">Total</label>
+                        </td>
+                        <td>
+                            <label class="product-line-price"></label>
+                        </td>
+                    </tr>
 
-                        <tr>
+                    <tr>
 
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
+                        <td style="width: 20%;">
+                            <div class="book_cart_image">
+                                <img src="./images/p/p1.jpg" width="100px">
+                            </div>
+                        </td>
+                        <td>
 
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="book_cart_price">12.99</div>
 
-                            </td>
-                            <td>
+                        </td>
+                        <td>
 
-                                <b>03</b>
+                            <b>03</b>
 
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
+                        </td>
+                        <td>
+                            <div class="book_cart_line-price">38.97</div>
+                        </td>
+                        <td>
+                            <i class="fa fa-times" style="color: red;font-size: 25px;
+                               cursor: pointer;
+                               "></i>
+                        </td>
+                    </tr>
 
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
+                    <tr>
 
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
+                        <td style="width: 20%;">
+                            <div class="book_cart_image">
+                                <img src="./images/p/p1.jpg" width="100px">
+                            </div>
+                        </td>
+                        <td>
 
-                            </td>
-                            <td>
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="book_cart_price">12.99</div>
 
-                                <b>03</b>
+                        </td>
+                        <td>
 
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
+                            <b>03</b>
 
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
+                        </td>
+                        <td>
+                            <div class="book_cart_line-price">38.97</div>
+                        </td>
+                        <td>
+                            <i class="fa fa-times" style="color: red;font-size: 25px;
+                               cursor: pointer;
+                               "></i>
+                        </td>
+                    </tr>
+                    
+                    <tr>
 
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
+                        <td style="width: 20%;">
+                            <div class="book_cart_image">
+                                <img src="./images/p/p1.jpg" width="100px">
+                            </div>
+                        </td>
+                        <td>
 
-                            </td>
-                            <td>
+                            <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="book_cart_price">12.99</div>
 
-                                <b>03</b>
+                        </td>
+                        <td>
 
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
+                            <b>03</b>
 
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
+                        </td>
+                        <td>
+                            <div class="book_cart_line-price">38.97</div>
+                        </td>
+                        <td>
+                            <i class="fa fa-times" style="color: red;font-size: 25px;
+                               cursor: pointer;
+                               "></i>
+                        </td>
+                    </tr>
 
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
+                </table>
 
-                            </td>
-                            <td>
 
-                                <b>03</b>
+                <br />
+                <br />
+                <hr />
+                <br />
+                <br />
 
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
-
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
-
-                            </td>
-                            <td>
-
-                                <b>03</b>
-
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
-
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
-
-                            </td>
-                            <td>
-
-                                <b>03</b>
-
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
-
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
-
-                            </td>
-                            <td>
-
-                                <b>03</b>
-
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
-
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
-
-                            </td>
-                            <td>
-
-                                <b>03</b>
-
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
-
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
-
-                            </td>
-                            <td>
-
-                                <b>03</b>
-
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td style="width: 20%;">
-                                <i class="fa fa-remove delete_item"></i>
-                                <div class="book_cart_image">
-                                    <img src="./images/p/p1.jpg" width="100px">
-                                </div>
-                            </td>
-                            <td>
-
-                                <div class="book_cart_title">Dingo Dog Bones kjf all timfan.</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="book_cart_price">12.99</div>
-
-                            </td>
-                            <td>
-
-                                <b>03</b>
-
-                            </td>
-                            <td>
-                                <div class="book_cart_line-price">38.97</div>
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
-
-            </ul>
+            </div>
         </div>
 
-
-        <br />
-        <hr />
-        <br />
 
         <div class="check-out-container">
             <div>
